@@ -1,11 +1,32 @@
 :root {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Color Palette */
+    /*  */
+}
 
-/* Color Palette */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "nav nav nav" ". content ." "footer footer footer";
+}
 
+header {
+    grid-area: header;
+    background-color: blue;
+}
 
+nav {
+    grid-area: nav;
+    background-color: red;
+}
 
+main {
+    grid-area: content;
+    background-color: pink;
+}
 
-
-/*  */
+footer {
+    grid-area: footer;
+    background-color: green;
 }

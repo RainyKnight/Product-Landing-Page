@@ -6,15 +6,18 @@
     font-family: 'Roboto', sans-serif;
     /* Color Palette */
     --white: white;
+    --off-white: rgb(211, 211, 211);
     --black: black;
     --black-light: rgb(60, 60, 60);
     --green: greenyellow;
     /*  */
+
+    --default-shadow: 0px 5px 10px black;
 }
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: "hero usp" "content content";
 }
 
@@ -105,6 +108,21 @@ img {
     grid-area: content;
     background-color: var(--white);
     padding: 2rem;
+}
+
+.plan-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-plan {
+    background-color: var(--green);
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5rem;
+    margin: 1rem;
+    box-shadow: var(--default-shadow);
 }
 
 footer {

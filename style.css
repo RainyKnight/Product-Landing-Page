@@ -8,6 +8,7 @@
 
     --white: white;
     --black: black;
+    --black-light: rgb(60, 60, 60);
     --green: greenyellow;
     /*  */
 }
@@ -48,6 +49,12 @@ nav>a, nav>p {
     text-decoration: none;
     color: var(--white);
     font-weight: 900;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+nav>a:hover {
+    background-color: var(--black-light);
 }
 
 .sticky {

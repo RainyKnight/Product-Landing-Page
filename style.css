@@ -109,6 +109,14 @@ img {
     padding: 2rem;
 }
 
+.promo-wrapper {
+    display: flex;
+    align-items: center;
+}
+.promo-video {
+    border-radius: 10px;
+}
+
 .plan-wrapper {
     display: flex;
     justify-content: center;

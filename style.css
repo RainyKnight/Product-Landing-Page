@@ -4,27 +4,24 @@
     /*  */
 }
 
+body {
+    align-self: center;
+}
+
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    grid-template-areas: 
-    "banner banner" 
-    "nav nav"
-    "hero usp" 
-    "content content" 
-    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero usp" "content content";
 }
 
 .banner {
-    grid-area: banner;
     background-color: blue;
     text-align: center;
     padding: 2rem;
+    align-self: inherit;
 }
 
 nav {
-    grid-area: nav;
     background-color: orange;
     padding: 1rem;
     text-align: center;
@@ -33,16 +30,19 @@ nav {
 .usp {
     grid-area: usp;
     background-color: red;
+    padding: 2rem;
 }
 
 .hero-image {
     grid-area: hero;
     background-color: yellow;
+    padding: 2rem;
 }
 
 .content {
     grid-area: content;
     background-color: linen;
+    padding: 2rem;
 }
 
 footer {
@@ -50,4 +50,6 @@ footer {
     background-color: green;
     padding: 1rem;
     text-align: center;
+    align-self: inherit;
+    border: solid red;
 }

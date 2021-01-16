@@ -4,10 +4,6 @@
     /*  */
 }
 
-body {
-    align-self: center;
-}
-
 .grid-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -15,22 +11,26 @@ body {
 }
 
 .banner {
-    background-color: blue;
+    background-color: white;
     text-align: center;
     padding: 2rem;
     align-self: inherit;
 }
 
 nav {
-    background-color: orange;
+    background-color: rgb(29, 29, 29);
     padding: 1rem;
     text-align: center;
 }
 
 .usp {
     grid-area: usp;
-    background-color: red;
-    padding: 2rem;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
 .hero-image {
@@ -54,5 +54,4 @@ footer {
     background-color: green;
     padding: 1rem;
     text-align: center;
-    align-self: inherit;
 }

@@ -1,6 +1,14 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 :root {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* Color Palette */
+
+    --white: white;
+    --black: black;
+    --green: greenyellow;
     /*  */
 }
 
@@ -10,22 +18,48 @@
     grid-template-areas: "hero usp" "content content";
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 .banner {
-    background-color: white;
+    background-color: var(--white);
     text-align: center;
     padding: 2rem;
     align-self: inherit;
+    font-size: 3rem;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Carter One', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Righteous', cursive;
 }
 
 nav {
-    background-color: rgb(29, 29, 29);
-    padding: 1rem;
+    background-color: var(--black);
     text-align: center;
+}
+
+nav>a, nav>p {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 900;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
 }
 
 .usp {
     grid-area: usp;
-    background-color: greenyellow;
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +69,7 @@ nav {
 
 .hero-image {
     grid-area: hero;
-    background-color: yellow;
+    background-color: var(--white);
 }
 
 img {
@@ -45,13 +79,14 @@ img {
 
 .content {
     grid-area: content;
-    background-color: linen;
+    background-color: var(--white);
     padding: 2rem;
 }
 
 footer {
     grid-area: footer;
-    background-color: green;
+    background-color: var(--black);
+    color: var(--white);
     padding: 1rem;
     text-align: center;
 }

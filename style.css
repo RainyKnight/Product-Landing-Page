@@ -10,7 +10,7 @@ body {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: "hero usp" "content content";
 }
 
@@ -36,7 +36,11 @@ nav {
 .hero-image {
     grid-area: hero;
     background-color: yellow;
-    padding: 2rem;
+}
+
+img {
+    display: flex;
+    width: 100%;
 }
 
 .content {
@@ -51,5 +55,4 @@ footer {
     padding: 1rem;
     text-align: center;
     align-self: inherit;
-    border: solid red;
 }

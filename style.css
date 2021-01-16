@@ -18,12 +18,17 @@ header {
 
 nav {
     grid-area: nav;
-    background-color: red;
+    background-color: orange;
 }
 
 main {
     grid-area: content;
-    background-color: pink;
+    background-color: linen;
+}
+
+.hero-image {
+    grid-area: hero;
+    background-color: red;
 }
 
 footer {

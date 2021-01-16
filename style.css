@@ -18,10 +18,20 @@
     grid-template-areas: "hero usp" "content content";
 }
 
+/* mobile layout */
+
 @media (max-width: 500px) {
     .grid-wrapper {
         grid-template-columns: auto;
-        grid-template-areas: "usp" "hero" "content";
+        grid-template-areas: "hero" "usp" "content";
+    }
+    h1 {
+        font-size: 1em;
+        margin: 1rem;
+    }
+    nav>a {
+        padding: 0px;
+        margin: -10px;
     }
 }
 
@@ -78,6 +88,7 @@ nav>a:hover {
     align-items: center;
     text-align: center;
     height: 100%;
+    z-index: 5;
 }
 
 .hero-image {

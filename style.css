@@ -15,6 +15,7 @@
     --yellow: #ffd200;
     /*  */
     --default-shadow: 0px 5px 10px black;
+    --text-shadow: 2px 2px 1px var(--orange);
 }
 
 .grid-wrapper {
@@ -57,6 +58,7 @@
     font-size: 3rem;
     padding: 0;
     font-family: 'Righteous', cursive;
+    text-shadow: var(--text-shadow);
 }
 
 nav {

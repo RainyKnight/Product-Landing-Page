@@ -20,7 +20,7 @@
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-areas: "hero usp" "content content";
 }
 
@@ -40,6 +40,8 @@
     }
     .payment-plan {
         margin: 1rem 0 1rem 0;
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -95,12 +97,37 @@ nav>a:hover {
     grid-area: usp;
     background-color: var(--green);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100%;
     z-index: 5;
 }
+
+button {
+    font-size: 24px;
+    border-radius: 10px;
+    border-style: unset;
+    box-shadow: var(--default-shadow) ;
+    font-weight: 900;
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 0.5rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* #triangle-bottomright {
+    /* grid-area: hero; */
+    width: 0;
+    height: 0;
+    border-bottom: 1fr solid red;
+    border-left: 100px solid transparent;
+  } */
 
 .hero-image {
     grid-area: hero;
@@ -125,6 +152,7 @@ img {
 
 .promo-video {
     border-radius: 10px;
+    text-align: center;
 }
 
 .plan-wrapper {

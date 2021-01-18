@@ -10,6 +10,7 @@
     --black: black;
     --black-light: rgb(60, 60, 60);
     --green: greenyellow;
+    --purple: #5c3ba3;
     /*  */
     --default-shadow: 0px 5px 10px black;
 }
@@ -35,6 +36,9 @@
         padding: 0px;
         margin: -10px;
     }
+    .payment-plan {
+        margin: 1rem 0 1rem 0;
+    }
 }
 
 .flex {
@@ -52,9 +56,6 @@
     align-self: inherit;
     font-size: 3rem;
     padding: 0;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Carter One', cursive;
-    font-family: 'Lobster', cursive;
     font-family: 'Righteous', cursive;
 }
 
@@ -113,6 +114,7 @@ img {
     display: flex;
     align-items: center;
 }
+
 .promo-video {
     border-radius: 10px;
 }
@@ -120,19 +122,19 @@ img {
 .plan-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     flex-wrap: wrap;
 }
 
 .payment-plan {
     text-decoration: unset;
-    color: var(--black);
-    background-color: var(--green);
+    text-align: center;
+    color: var(--white);
+    background-color: var(--purple);
     border-style: solid;
     border-radius: 20px;
-    width: 10rem;
-    height: 10rem;
+    border-color: var(--black);
+    width: 15rem;
+    height: 15rem;
     margin: 1rem;
     box-shadow: var(--default-shadow);
 }
@@ -140,6 +142,28 @@ img {
 .payment-plan:hover {
     transform: scale(1.05);
 }
+
+.plan-name {
+    font-size: 2rem;
+    text-shadow: var(--default-shadow);
+}
+
+.plan-price {
+    font-weight: 900;
+    font-size: 36pt;
+    text-shadow: var(--default-shadow);
+    margin: 0 0 0 0;
+}
+
+/* Uncomment if perks are listed */
+
+/* .plan-perks {
+    text-align: left;
+    margin-left: 15%;
+    color: black;
+    font-weight: 900;
+
+} */
 
 footer {
     grid-area: footer;

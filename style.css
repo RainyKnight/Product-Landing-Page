@@ -11,7 +11,8 @@
     --black-light: rgb(60, 60, 60);
     --green: #3bd1ad;
     --purple: #5c3ba3;
-    --orange: #fa7022;
+    --orange: #fe492c;
+    --yellow: #ffd200;
     /*  */
     --default-shadow: 0px 5px 10px black;
 }
@@ -35,7 +36,6 @@
     }
     nav>a {
         padding: 0px;
-        margin: -10px;
     }
     .payment-plan {
         margin: 1rem 0 1rem 0;
@@ -53,7 +53,6 @@
 .banner {
     background-color: var(--white);
     text-align: center;
-    padding: 2rem;
     align-self: inherit;
     font-size: 3rem;
     padding: 0;
@@ -70,11 +69,17 @@ nav>a, nav>p {
     color: var(--white);
     font-weight: 900;
     padding: 1rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+}
+
+nav>p {
+    padding: 0;
+    color: var(--yellow);
 }
 
 nav>a:hover {
-    /* background-color: var(--black-light); */
+    background-color: var(--orange);
+    color: var(--black);
 }
 
 .sticky {
@@ -167,7 +172,6 @@ img {
 } */
 
 footer {
-    grid-area: footer;
     background-color: var(--black);
     color: var(--white);
     padding: 1rem;

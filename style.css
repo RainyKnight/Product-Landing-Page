@@ -120,6 +120,8 @@ img {
 .plan-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
 }
 
@@ -129,7 +131,8 @@ img {
     background-color: var(--green);
     border-style: solid;
     border-radius: 20px;
-    padding: 5rem;
+    width: 10rem;
+    height: 10rem;
     margin: 1rem;
     box-shadow: var(--default-shadow);
 }

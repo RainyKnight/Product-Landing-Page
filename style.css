@@ -66,6 +66,9 @@ main {
     .usp>h2 {
         margin-top: 0rem;
     }
+    .content {
+        border-radius: 0 !important;
+    }
 }
 
 .flex {

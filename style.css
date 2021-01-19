@@ -16,11 +16,11 @@
     /*  */
     --default-shadow: 0px 5px 10px black;
     --text-shadow: 2px 2px 1px var(--orange);
-    --height: 200px;
+    --height: 526px;
     --width: 200px;
 }
 
-.grid-wrapper {
+.main-wrapper {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-areas: "hero usp" "content content";
@@ -47,7 +47,7 @@
     nav>a {
         padding: 0px;
     }
-    . .payment-plan {
+    .payment-plan {
         margin: 1rem 0 1rem 0;
         width: 50%;
         height: 50%;
@@ -166,7 +166,7 @@ nav>a:hover {
     justify-self: right;
     width: 0;
     height: auto;
-    border-bottom: var(--height) solid var(--green);
+    border-bottom: var(--height) solid var(--orange);
     border-left: var(--width) solid transparent;
     margin-right: -1px;
 }

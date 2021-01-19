@@ -8,7 +8,7 @@
     --white: white;
     --off-white: rgb(211, 211, 211);
     --black: black;
-    --off-black: rgb(54, 54, 54);
+    --off-black: rgb(30, 30, 30);
     --green: #3bd1ad;
     --purple: #5c3ba3;
     --orange: #fe492c;
@@ -52,7 +52,7 @@
         height: 50%;
     }
     .triangle-bottomright {
-        display: none;
+        display: none !important;
     }
     .usp>h2 {
         margin-top: 0rem;
@@ -102,8 +102,9 @@ nav>a {
 }
 
 nav>a:hover {
-    border-style: solid;
-    border-color: var(--green);
+    background-color: var(--off-black);
+    /* border-style: solid;
+    border-color: var(--green); */
 }
 
 .sticky {
@@ -154,6 +155,7 @@ nav>a:hover {
 }
 
 .triangle-bottomright {
+    display: flex;
     grid-area: hero;
     justify-self: right;
     width: 0;

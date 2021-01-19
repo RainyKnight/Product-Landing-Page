@@ -174,9 +174,11 @@ img {
     display: flex;
 }
 
-/* #hero-img {
+/* Keeps image magnifier extensions from activating on the image */
+
+#hero-img {
     pointer-events: none;
-} */
+}
 
 .triangle-bottomright {
     grid-area: hero;

@@ -25,10 +25,9 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "banner" "nav" "content" "footer";
-    /* background-color: var(--green); */
-    background-image: linear-gradient(90deg, var(--purple),var(--green));
-    background: linear-gradient(90deg, var(--purple) 50%, var(--green) 50%);}
-
+    background-color: var(--off-black);
+    background: linear-gradient(90deg, var(--purple) 50%, var(--green) 50%);
+}
 
 .main-wrapper {
     display: grid;
@@ -113,8 +112,6 @@ nav>a {
 
 nav>a:hover {
     background-color: var(--off-black);
-    /* border-style: solid;
-    border-color: var(--green); */
 }
 
 .sticky {
@@ -157,6 +154,10 @@ nav>a:hover {
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+}
+
 .hero-image {
     grid-area: hero;
     background-color: var(--white);
@@ -173,14 +174,12 @@ nav>a:hover {
     margin-right: 0px;
 }
 
-img {
-    width: 100%;
-}
-
 .content {
     grid-area: content;
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 20px 20px 0 0;
+    box-shadow: var(--default-shadow);
 }
 
 .promo-wrapper {

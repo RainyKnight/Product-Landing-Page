@@ -65,9 +65,10 @@
 }
 
 .banner {
+    display: flex;
+    flex-direction: column;
     background-color: var(--white);
     text-align: center;
-    align-self: inherit;
     font-size: 3rem;
     padding: 0;
     font-family: 'Righteous', cursive;

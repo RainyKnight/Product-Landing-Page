@@ -8,6 +8,7 @@
     --white: white;
     --off-white: rgb(211, 211, 211);
     --black: black;
+    --off-black: rgb(54, 54, 54);
     --green: #3bd1ad;
     --purple: #5c3ba3;
     --orange: #fe492c;
@@ -46,13 +47,23 @@
     nav>a {
         padding: 0px;
     }
-    .payment-plan {
+    . .payment-plan {
         margin: 1rem 0 1rem 0;
         width: 50%;
         height: 50%;
     }
     .triangle-bottomright {
         display: none;
+    }
+    .usp>h2 {
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 371px) {
+    .grid-wrapper {
+        grid-template-columns: auto;
+        grid-template-rows: auto 10rem auto;
     }
 }
 
@@ -90,11 +101,17 @@ nav>a, nav>p {
 nav>p {
     padding: 0;
     color: var(--yellow);
+    cursor: default;
+}
+
+nav>a {
+    border-style: solid;
+    border-color: var(--black);
 }
 
 nav>a:hover {
-    background-color: var(--orange);
-    color: var(--black);
+    border-style: solid;
+    border-color: var(--green);
 }
 
 .sticky {
@@ -111,6 +128,9 @@ nav>a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border box to keep the padding from running out of bounds */
+    box-sizing: border-box;
+    padding: 2rem;
     text-align: center;
     height: 100%;
     z-index: 5;

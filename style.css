@@ -25,6 +25,12 @@
     grid-template-areas: "hero usp" "content content";
 }
 
+.body-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "banner" "nav" "content" "footer";
+}
+
 /* mobile layout */
 
 @media (max-width: 500px) {

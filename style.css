@@ -69,6 +69,11 @@ main {
     .content {
         border-radius: 0 !important;
     }
+    #benefits {
+        margin: 0 !important;
+        margin-bottom: 3rem !important;
+    }
+    
 }
 
 /* ultra-wide layout */
@@ -112,7 +117,10 @@ main {
 
 nav {
     background-color: var(--black);
+    opacity: 95%;
     text-align: center;
+    z-index: 5;
+    align-self: start
 }
 
 nav>a, nav>p {
@@ -137,6 +145,12 @@ nav>a:hover {
     background-color: var(--off-black);
 }
 
+.sticky {
+	background-color: #ffffff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
 .usp {
     grid-area: usp;
     background-color: var(--green);
@@ -149,7 +163,7 @@ nav>a:hover {
     padding: 2rem;
     text-align: center;
     height: 100%;
-    z-index: 5;
+    z-index: 3;
 }
 
 /* call to action button */
@@ -200,6 +214,10 @@ img {
     grid-area: content;
     background-color: var(--white);
     padding: 2rem;
+}
+
+#benefits {
+    margin: 5rem;
 }
 
 .promo-wrapper {

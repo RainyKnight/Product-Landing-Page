@@ -114,13 +114,6 @@ nav>a:hover {
     background-color: var(--off-black);
 }
 
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    top: 0;
-}
-
 .usp {
     grid-area: usp;
     background-color: var(--green);

@@ -34,7 +34,7 @@
 
 /* mobile layout */
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .main-wrapper {
         grid-template-columns: auto;
         grid-template-rows: auto 12rem auto;
@@ -42,7 +42,6 @@
     }
     h1 {
         font-size: 36pt;
-        margin: 1rem;
     }
     nav>a {
         padding: 0px;

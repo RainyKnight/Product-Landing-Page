@@ -40,7 +40,7 @@
         grid-template-areas: "hero" "usp" "content";
     }
     h1 {
-        font-size: 1em;
+        font-size: 36pt;
         margin: 1rem;
     }
     nav>a {
@@ -85,7 +85,6 @@ nav>a, nav>p {
     color: var(--white);
     font-weight: 900;
     padding: 1rem;
-    /* border-radius: 5px; */
 }
 
 nav>p {

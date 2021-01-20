@@ -15,8 +15,7 @@
     --orange: #fe492c;
     --yellow: #ffd200;
     /*  */
-    --default-shadow: 0px 5px 10px black;
-    --text-shadow: 2px 2px 1px var(--orange);
+    --default-shadow: 0px 5px 10px var(--black);
     --border-radius: 10px;
     /* Triangle parameters */
     --height: 32em;
@@ -255,16 +254,7 @@ img {
 }
 
 .payment-plan:hover {
-    animation-name: color-change;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes color-change {
-    100% {
-        transform: scale(1.05);
-        background-color: var(--black);
-    }
+    transform: scale(1.05);
 }
 
 .plan-name {

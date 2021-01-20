@@ -16,6 +16,7 @@
     --yellow: #ffd200;
     /*  */
     --default-shadow: 0px 5px 10px var(--black);
+    --text-shadow: 2px 2px 1px var(--orange);
     --border-radius: 10px;
     /* Triangle parameters */
     --height: 32em;
@@ -42,7 +43,7 @@ main {
     max-width: 1500px;
 }
 
-/* mobile layout */
+/* mobile portrait layout */
 
 @media (max-width: 550px) {
     .main-wrapper {
@@ -73,6 +74,9 @@ main {
     #benefits {
         margin: 0 !important;
         margin-bottom: 3rem !important;
+    }
+    #video {
+        width: 100% !important;
     }
 }
 
@@ -229,7 +233,7 @@ img {
 #video {
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 70%;
     border-radius: var(--border-radius);
 }
 

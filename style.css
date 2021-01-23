@@ -253,6 +253,11 @@ img {
     border-radius: var(--border-radius);
 }
 
+#plans {
+    text-align: center;
+    position: relative;
+}
+
 .plan-wrapper {
     display: flex;
     justify-content: center;

@@ -236,7 +236,9 @@ img {
 }
 
 #benefits {
+    position: relative;
     margin: 5rem;
+    top: 1rem;
 }
 
 .promo-wrapper {

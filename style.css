@@ -26,7 +26,7 @@
 .body-wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "banner" "nav" "content" "footer";
+    grid-template-areas: "banner" "content" "footer";
     background-color: var(--black);
     /* background: linear-gradient(90deg, var(--purple) 50%, var(--green) 50%); */
 }
@@ -41,6 +41,7 @@ main {
     display: flex;
     justify-self: center;
     max-width: 1500px;
+    margin-top: 4rem;
 }
 
 /* mobile portrait layout */
@@ -120,10 +121,10 @@ main {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     background-color: var(--black);
-    opacity: 95%;
     text-align: center;
     z-index: 5;
     align-self: start
@@ -149,13 +150,6 @@ nav>a {
 
 nav>a:hover {
     background-color: var(--off-black);
-}
-
-.sticky {
-    background-color: #ffffff;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
 .usp {

@@ -120,6 +120,8 @@ main {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     background-color: var(--black);
     opacity: 95%;
     text-align: center;
@@ -283,16 +285,6 @@ img {
     text-shadow: var(--default-shadow);
     margin: 0 0 0 0;
 }
-
-/* Uncomment if perks are listed */
-
-/* .plan-perks {
-    text-align: left;
-    margin-left: 15%;
-    color: black;
-    font-weight: 900;
-
-} */
 
 footer {
     background-color: var(--black);
